@@ -1,7 +1,6 @@
 :root {
-    --main-color: #f6b429;
-    --vinho: #7f1d12;
-    --bg: #010103;
+    --main-color: #E2C400;
+    --vinho: #FF8DA1;
     --border: 0.1rem solid #31140c;
 }
 
@@ -9,6 +8,7 @@ html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
+    background: #ffd3da;
 }
 
 @media (max-widht: 1200px) {
@@ -57,7 +57,7 @@ html {
         position: absolute;
         top: 100%;
         right: -100%;
-        background: var(--black);
+        background: var(--vinho);
         width: 30rem;
         height: calc(100vh - 9.5rem);
         display: block;
@@ -322,7 +322,7 @@ section {
 
 .title {
     font-size: 4rem;
-    color: var(--main-color);
+    color: white;
     text-align: center;
     text-transform: uppercase;
     margin-bottom: 3rem;
@@ -330,7 +330,7 @@ section {
 }
 
 .title span {
-    color: white;
+    color: var(--vinho);
     text-transform: uppercase;
 }
 

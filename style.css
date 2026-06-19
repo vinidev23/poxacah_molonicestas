@@ -1,14 +1,13 @@
 :root {
     --main-color: #E2C400;
-    --vinho: #FF8DA1;
+    --vinho: #FC46AA;
     --border: 0.1rem solid #31140c;
 }
-
 html {
     font-size: 62.5%;
     overflow-x: hidden;
     scroll-behavior: smooth;
-    background: #ffd3da;
+    background: #FF8DA1;
 }
 
 @media (max-widht: 1200px) {
@@ -63,6 +62,7 @@ html {
         display: block;
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
         padding-top: 2rem;
+        
     }
 
     .header .navbar.active {
@@ -195,7 +195,6 @@ html {
 }
 
 body {
-    background-color: var(--bg);
     overflow-x: hidden;
 }
 

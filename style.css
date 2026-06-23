@@ -374,9 +374,16 @@ section {
 }
 
 .box-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
-    gap: 1.5rem;
+    display: flex;
+    overflow-x: auto;
+    gap: 2rem;
+    padding: 2rem 1rem;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+}
+
+.box-container::-webkit-scrollbar {
+    display: none;
 }
 
 .produtos .box-container .box {
@@ -386,6 +393,8 @@ section {
     cursor: pointer;
     background-color: var(--vinho);
     border-radius: 0.5rem;
+    flex: 0 0 28rem;
+    scroll-snap-align: start;
 }
 
 .produtos .box-container .box img.cardapio {
@@ -585,3 +594,25 @@ section {
     color: white;
 }
 
+.carousel-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: white;
+    color: var(--main-color);
+    border: none;
+    padding: 1rem 1.5rem;
+    cursor: pointer;
+    font-size: 2rem;
+    z-index: 10;
+    border-radius: 50%;
+}
+
+.prev { left: -2rem; }
+.next { right: -2rem; }

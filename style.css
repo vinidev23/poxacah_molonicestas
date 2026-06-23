@@ -210,7 +210,6 @@ section {
     left: 0;
     right: 0;
     z-index: 99;
-    border-bottom: var(--border);
     background-color: var(--vinho);
 }
 
@@ -388,7 +387,6 @@ section {
 
 .produtos .box-container .box {
     text-align: center;
-    border: var(--border);
     padding: 3rem;
     cursor: pointer;
     background-color: var(--vinho);
@@ -442,6 +440,8 @@ section {
 
 .rodape {
     color: white;
+    margin-top: 2rem;
+    font-size: 1.2rem;
 }
 
 .footer {
@@ -616,3 +616,11 @@ section {
 
 .prev { left: -2rem; }
 .next { right: -2rem; }
+
+.patrocinio {
+    width: 200px;
+    height: auto;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-radius: 3.5rem;
+}

@@ -126,7 +126,7 @@ confirmOrderBtn.addEventListener('click', () => {
     const formattedDate = now.toLocaleDateString('pt-BR', dateOptions);
     const formattedTime = now.toLocaleTimeString('pt-BR', timeOptions);
 
-    let message = `*NOVO PEDIDO - BURGER DEV'S*\n\n`;
+    let message = `*NOVO PEDIDO - POXACAH MOLONI CESTAS*\n\n`;
     message += `*Nome do Cliente:* ${customerName}\n\n`;
     message += `*Itens do Pedido:*\n`;
     cart.forEach(item => {
@@ -138,7 +138,7 @@ confirmOrderBtn.addEventListener('click', () => {
     message += `Aguardando confirmação!`;
 
     const encodedMessage = encodeURIComponent(message);
-    const phoneNumber = '5518981039015';
+    const phoneNumber = '5518988202108';
     const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     window.open(whatsappURL, '_blank');
 

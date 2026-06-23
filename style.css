@@ -163,15 +163,6 @@ html {
         width: 12rem;
         height: 12rem;
     }
-
-    .footer .patrocinio {
-    width: 150px;
-    height: auto;
-    display: flex;
-    justify-content: center;
-    padding: 2rem 1rem;
-    border-radius: 3.5rem;
-    }
 }
 
 .navbar.active {

@@ -163,6 +163,11 @@ html {
         width: 12rem;
         height: 12rem;
     }
+
+    .footer .share img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
 }
 
 .navbar.active {

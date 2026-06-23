@@ -164,9 +164,13 @@ html {
         height: 12rem;
     }
 
-    .footer .share img {
-        width: 2.5rem;
-        height: 2.5rem;
+    .footer .patrocinio {
+    width: 150px;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 1rem;
+    border-radius: 3.5rem;
     }
 }
 

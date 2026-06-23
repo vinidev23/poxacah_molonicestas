@@ -168,7 +168,6 @@ html {
     width: 150px;
     height: auto;
     display: flex;
-    gap: 15px;
     justify-content: center;
     padding: 2rem 1rem;
     border-radius: 3.5rem;

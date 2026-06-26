@@ -652,3 +652,9 @@ section {
   font-size: 40px;
   cursor: pointer;
 }
+
+.recomendacao {
+    color: white;
+    text-align: center;
+    font-size: 1.5rem;
+}

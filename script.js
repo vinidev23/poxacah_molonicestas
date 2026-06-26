@@ -90,6 +90,27 @@ function displayCartItems() {
     totalPriceSpan.innerText = `R$ ${total.toFixed(2).replace('.', ',')}`;
 }
 
+const modal = document.getElementById("imageModal");
+const modalImg = document.getElementById("fullImage");
+const closeBtn = document.querySelector(".close-modal");
+
+document.querySelectorAll('.cardapio').forEach(img =>{
+    img.addEventListener('click', () => {
+        modal.style.display = "flex";
+        modalImg.src = img.src;
+    });
+});
+
+closeBtn.addEventListener('click', () => {
+    modal.style.display = "none";
+});
+
+modal.addEventListener('click', (e) => {
+    if (e.target !== modalImg) {
+        modal.style.display = "none";
+    }
+});
+
 const container = document.getElementById('box-container');
 const prevBtn = document.querySelector('.prev');
 const nextBtn = document.querySelector('.next');

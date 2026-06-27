@@ -111,19 +111,6 @@ modal.addEventListener('click', (e) => {
     }
 });
 
-const container = document.getElementById('box-container');
-const prevBtn = document.querySelector('.prev');
-const nextBtn = document.querySelector('.next');
-const scrollAmount = 300; 
-
-nextBtn.addEventListener('click', () => {
-    container.scrollBy({ left: scrollAmount, behavior: 'smooth' });
-});
-
-prevBtn.addEventListener('click', () => {
-    container.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
-});
-
 confirmOrderBtn.addEventListener('click', () => {
     const customerName = customerNameInput.value.trim();
     const selectedPaymentMethod = document.querySelector('input[name="payment-method"]:checked');

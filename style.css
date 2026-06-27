@@ -374,11 +374,10 @@ section {
 
 .box-container {
     display: flex;
-    overflow-x: auto;
+    flex-direction: column;
+    overflow-x: hidden;
     gap: 2rem;
     padding: 2rem 1rem;
-    scroll-snap-type: x mandatory;
-    scrollbar-width: none;
 }
 
 .box-container::-webkit-scrollbar {
@@ -391,14 +390,16 @@ section {
     cursor: pointer;
     background-color: var(--vinho);
     border-radius: 0.5rem;
-    flex: 0 0 28rem;
-    scroll-snap-align: start;
+    flex: none;
+    width: 100%;
+    max-width: 50rem;
+    margin: 0 auto
 }
 
 .produtos .box-container .box img.cardapio {
     border-radius: 1.2rem;
-    width: 15rem;
-    height: 15rem;
+    width: 20rem;
+    height: 20rem;
     object-fit: cover;
     margin-bottom: 1rem;
 }
@@ -593,29 +594,6 @@ section {
 .close-button:hover {
     color: white;
 }
-
-.carousel-wrapper {
-    position: relative;
-    display: flex;
-    align-items: center;
-}
-
-.arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: white;
-    color: var(--main-color);
-    border: none;
-    padding: 1rem 1.5rem;
-    cursor: pointer;
-    font-size: 2rem;
-    z-index: 10;
-    border-radius: 50%;
-}
-
-.prev { left: -2rem; }
-.next { right: -2rem; }
 
 .patrocinio {
     width: 150px;
